@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Guess Number Game</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.cdnfonts.com/css/pf-tempesta-seven" rel="stylesheet">
+                
+</head>
+
+<body>
+    <div class="container">
+        <div class="game-settings">
+            <h1 class="head">Guess Number Game</h1>
+            <div class="diff-btn">
+                <button id="easy-btn">Easy</button>
+                <button id="medium-btn">Medium</button>
+                <button id="hard-btn">Hard</button>
+                <button id="diff-info">?</button>
+            </div>
+            <h5 class="information">Read rules and choose your level...</h5>
+        </div>
+        <h5 class="info-2">
+            <p>Easy 👉 range 0-20 and 4 guess</p>
+            <p>Medium 👉 range 0-50 and 6 guess</p>
+            <p>Hard 👉 range 0-100 and 8 guess</p>
+        </h5>
+        <div class="game">
+            <div class="game-level">
+                <p class="hp-bar"></p>
+                <h5 class="level"></h5>
+            </div>
+            <div class="game-bar">
+                <div class="pixel-gif">
+                    <img src="./images/pixel-art-12601_128.gif" alt="">
+                </div>
+                <div class="form-control">
+                    <input class="begin" type="number" name="guessNum" id="guess" min="0" placeholder="Try your luck😎">
+                    <div class="btn-group">
+                        <button class="begin" id="check-btn">Check it!</button>
+                        <button id="reset-btn">Restart Game</button>
+                    </div>
+                </div>
+            </div>
+            <div class="info">
+                <p class="messages">Good Luck. Have Fun!</p>
+            </div>
+        </div>
+
+        <div class="footer">
+            <p> &copy; Made by Poseidon</p>
+        </div>
+
+    </div>
+
+
+
+
+
+
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>

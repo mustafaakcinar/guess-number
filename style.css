@@ -1,0 +1,150 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'PF Tempesta Seven', sans-serif;
+    font-optical-sizing: auto;
+}
+.container{
+    max-width: 100%;
+    min-height: 100vh;
+    background-image: url("./images/pexels-photo-1293269.jpeg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 1rem;
+}
+
+.game-settings{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+.form-control{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.diff-btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+button{
+    padding: 1rem 2rem;
+    border-radius: 10px;
+    background-color: rgb(43, 42, 42);
+    color: white;
+    font-size: 1.5rem;
+}
+
+.information, .info-2, .level, .hp-bar{
+    font-size: 1.2rem;
+    color: yellow;
+    background-color: rgba(128, 128, 128, 0.692);
+    border-radius: 5px;
+    padding: 0.5rem;
+    text-align: center;
+}
+.head{
+    color: yellow;
+    background-color: rgba(128, 128, 128, 0.692);
+    border-radius: 5px;
+    padding: 0.5rem;
+    text-align: center;
+}
+
+.game-level{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.info-2{
+    display: none;
+}
+
+.visible{
+    display: block;
+}
+
+input{
+    padding: 2rem;
+    text-align: center;
+    background-color: rgba(128, 128, 128, 0.589);
+    color: yellow;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+input::-webkit-inner-spin-button,
+input::-webkit-outer-spin-button{
+    -webkit-appearance: none;
+}
+
+input::placeholder{
+    color: yellow;
+}
+
+.game{
+    border: 3px outset grey;
+    backdrop-filter: blur(3px);
+    padding: 4rem 5rem;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.game-bar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: row-reverse;
+    gap: 2rem;
+
+}
+
+.pixel-gif img{
+    /* background-color: rgba(51, 44, 44, 0.486); */
+    width: 250px;
+    height: 250px;
+}
+
+.messages{
+    margin-top: 3rem;
+    font-size: 2rem;
+    color: yellow;
+    background-color: rgba(128, 128, 128, 0.692);
+    border-radius: 5px;
+    padding: 1rem;
+}
+
+.footer{
+    color: yellow;
+    text-align: center;
+}
+
+.info{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
