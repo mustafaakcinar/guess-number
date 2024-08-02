@@ -87,7 +87,7 @@ const checkNum = () => {
                 text: `You need to work harder😎 Number was ${random}`,
                 imageUrl: "./images/pixel-art-13575_256.gif",
                 background: "black",
-                color: "white"
+                color: "white",
             });
             document.querySelectorAll(".begin").forEach((item) => item.disabled = true)
         }
@@ -97,7 +97,13 @@ const checkNum = () => {
 }
 
 document.getElementById("check-btn").onclick = () => checkNum()
-body.onkeydown = (e) => e.key === "Enter" ? checkNum() : ""
+body.onkeydown = (e) => {
+    if (e.key === "Enter") {
+        e.preventDefault(); // Formun varsayılan davranışını engelle
+        checkNum();
+    }
+};
+
 
 document.querySelector("#reset-btn").onclick = () => {
     msg("New Game Started")
