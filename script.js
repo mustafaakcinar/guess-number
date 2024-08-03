@@ -6,6 +6,7 @@ const information = document.querySelector(".information")
 const level = document.querySelector(".level")
 const hpBar = document.querySelector(".hp-bar")
 const checkBtn = document.querySelector("#check-btn")
+const info2 = document.querySelector(".info-2")
 
 let hp;
 let random;
@@ -25,7 +26,7 @@ const msg = (message) => {
 }
 
 document.getElementById("diff-info").onclick = () => {
-    document.querySelector(".info-2").classList.toggle("visible")
+    info2.classList.toggle("visible")
 }
 
 const difficulty = () => {
@@ -33,6 +34,7 @@ const difficulty = () => {
     game.style.display = "flex"
     container.style.justifyContent = "space-between"
     information.style.display = "none"
+    info2.style.display == "none" ? "" : info2.style.display = "none"
     document.querySelector(".diff-btn").style.display = "none"
     hpBar.textContent = "❤".repeat(hp)
     msg("Lets Go!!!")
@@ -63,7 +65,7 @@ const checkNum = () => {
     if (isNaN(number) || number < 0 || number > edge) {
         msg("Invalid entry please try again...")
     } else if (number == random) {
-        msg("Congratulations")
+        msg("Congratulations...Press Restart for New Game")
         document.querySelectorAll(".begin").forEach((item) => item.disabled = true)
         Swal.fire({
             title: "Good job!",
