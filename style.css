@@ -172,4 +172,10 @@ input::placeholder{
         justify-content: center;
         align-items: center;
     }
+    .info{
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
 }
