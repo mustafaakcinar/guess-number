@@ -16,7 +16,7 @@ Projede sık kullanılan HTML etiketleri ve CSS kullanılmıştır. Responsive y
 [JS DOM](https://www.w3schools.com/js/js_htmldom.asp)
 
 ## Demo
-[Live Link : ](https://mustafaakcinar.github.io/guess-number/)
+[Live Link](https://mustafaakcinar.github.io/guess-number/)
 
 ### Authours
 Bu proje mustafa akçınar tarafından yapılmıştır.
