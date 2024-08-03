@@ -122,7 +122,7 @@ document.querySelector("#reset-btn").onclick = () => {
     msg("New Game Started")
     game.style.display = "none"
     container.style.justifyContent = "center"
-    information.style.display = "block"
+    information.style.display = "flex"
     document.querySelector(".diff-btn").style.display = "flex"
     guess.value = ""
 }

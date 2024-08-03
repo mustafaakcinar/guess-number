@@ -67,11 +67,10 @@ button{
 }
 
 .game-level{
-    width: 100%;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
     flex-wrap: wrap;
-    /* gap: 10rem; */
+    gap: 5rem;
 }
 
 .info-2{
