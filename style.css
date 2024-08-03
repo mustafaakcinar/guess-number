@@ -165,7 +165,7 @@ input::placeholder{
         flex-direction: column;
     }
     .game{
-        border: 3px outset grey;
+        /* border: 3px outset grey; */
         backdrop-filter: blur(3px);
         display: flex;
         flex-direction: column;
