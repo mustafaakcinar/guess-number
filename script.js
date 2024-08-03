@@ -1,3 +1,5 @@
+//  Variable declaration
+
 const container = document.querySelector(".container")
 const guess = document.querySelector("#guess")
 const body = document.querySelector("body")
@@ -11,31 +13,36 @@ const info2 = document.querySelector(".info-2")
 let hp;
 let random;
 
+
+// body load event listener for first appearence
 body.onload = function () {
     game.style.display = "none"
     container.style.justifyContent = "center"
 }
 
-
+// random number function
 const randomNumber = (n) => {
     return Math.floor(Math.random() * (n + 1))
 }
 
+// message function for player
 const msg = (message) => {
     document.querySelector(".messages").textContent = message
 }
 
+// hidden information box click event listener
 document.getElementById("diff-info").onclick = () => {
     info2.classList.toggle("visible")
 }
 
+// they will be when the game difficulty level is selected 
 const difficulty = () => {
     random = randomNumber(edge)
     game.style.display = "flex"
     container.style.justifyContent = "space-between"
     information.style.display = "none"
-    info2.style.display == "none" ? "" : info2.style.display = "none"
     document.querySelector(".diff-btn").style.display = "none"
+    info2.classList.remove("visible")
     hpBar.textContent = "❤".repeat(hp)
     msg("Lets Go!!!")
     edge == 20 ?
@@ -51,13 +58,16 @@ const difficulty = () => {
     guess.focus()
 }
 
+// game level settings click listeners
 document.getElementById("easy-btn").onclick = () => { hp = 4, edge = 20, difficulty() }
 document.getElementById("medium-btn").onclick = () => { hp = 6, edge = 50, difficulty() }
 document.getElementById("hard-btn").onclick = () => { hp = 8, edge = 100, difficulty() }
 
+// check button click function
 const checkNum = () => {
     let number = guess.value
     checkBtn.disabled = true
+    // when input is empty user cant click check button control
     guess.addEventListener("input", () => guess.value === "" ?
         checkBtn.disabled = true
         : checkBtn.disabled = false
@@ -98,6 +108,7 @@ const checkNum = () => {
     guess.focus()
 }
 
+// check button and enter keydown event listeners
 document.getElementById("check-btn").onclick = () => checkNum()
 body.onkeydown = (e) => {
     if (e.key === "Enter") {
@@ -106,12 +117,12 @@ body.onkeydown = (e) => {
     }
 };
 
-
+// reset button function and event listener
 document.querySelector("#reset-btn").onclick = () => {
     msg("New Game Started")
-    document.querySelectorAll(".begin").forEach((item) => item.disabled = false)
     game.style.display = "none"
     container.style.justifyContent = "center"
     information.style.display = "block"
     document.querySelector(".diff-btn").style.display = "block"
+    guess.value = ""
 }
