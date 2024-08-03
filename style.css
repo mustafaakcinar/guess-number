@@ -153,3 +153,23 @@ input::placeholder{
     flex-wrap: wrap;
     gap: 1rem;
 }
+
+@media screen and (max-width:560px){
+    .btn-group{
+        display: flex;
+        flex-direction: column;
+    }
+    .game-level{
+        display: flex;
+        flex-direction: column;
+    }
+    .game{
+        border: 3px outset grey;
+        backdrop-filter: blur(3px);
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+}
